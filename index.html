@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>✨ MyNderes ✨</title>
+    <!-- 👇 css code file 👇 -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="banner">MyNderes</div>
+    <!-- 👇 your content here 👇 -->
+    <!-- Container for all pages -->
+    <div class="container">
+      <!-- Generate 30 divs, each with 20 pages using JavaScript -->
+      <script>
+        for (let i = 1; i <= 30; i++) {
+          document.write(`
+          <div class="page-container">
+            <h2>Juz ${i}</h2>
+            <div class="page-group">
+        `);
+          for (let j = 1; j <= 20; j++) {
+            document.write(`<div class="page" data-page-index="${(i - 1) * 20 + j}" data-color="aquamarine">Hlm ${(i - 1) * 20 + j}</div>`);
+          }
+          document.write(`
+            </div>
+          </div>
+        `);
+        }
+      </script>
+    </div>
+
+    <!--👇 javascript code file 👇 -->
+    <script src="./main.js"></script>
+  </body>
+</html>
